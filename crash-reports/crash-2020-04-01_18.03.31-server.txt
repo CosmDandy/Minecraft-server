@@ -1,0 +1,57 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+Contact their authors BEFORE contacting forge
+
+// Ooh. Shiny.
+
+Time: 4/1/20 6:03 PM
+Description: Exception in server tick loop
+
+Missing Mods:
+	unknown : need [4.12.0.+.,): have missing
+	unknown : need [3.2.3,): have missing
+
+net.minecraftforge.fml.common.MissingModsException: Mod nei (Not Enough Items) requires [jei@[4.12.0.+.,), codechickenlib@[3.2.3,)]
+	at net.minecraftforge.fml.common.Loader.sortModList(Loader.java:264)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:570)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Mac OS X (x86_64) version 10.13.6
+	Java Version: 1.8.0_231, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 701765752 bytes (669 MB) / 829947904 bytes (791 MB) up to 2863661056 bytes (2731 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 8 mods loaded, 8 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID              | Version                  | Source                                        | Signature                                |
+	|:----- |:--------------- |:------------------------ |:--------------------------------------------- |:---------------------------------------- |
+	| U     | minecraft       | 1.12.2                   | minecraft.jar                                 | None                                     |
+	| U     | mcp             | 9.42                     | minecraft.jar                                 | None                                     |
+	| U     | FML             | 8.0.99.99                | forge-1.12.2-14.23.5.2768-universal.jar       | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| U     | forge           | 14.23.5.2768             | forge-1.12.2-14.23.5.2768-universal.jar       | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| U     | ic2             | 2.8.170-ex112            | industrialcraft-2-2.8.170-ex112.jar           | None                                     |
+	| U     | inventorytweaks | 1.63+release.109.220f184 | InventoryTweaks-1.63.jar                      | None                                     |
+	| U     | journeymap      | 1.12.2-5.5.5             | journeymap-1.12.2-5.5.5.jar                   | None                                     |
+	| U     | nei             | 2.4.3                    | NotEnoughItems_1.12.2_2.4.3.245_universal.jar | None                                     |
+
+	Loaded coremods (and transformers): 
+Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  invtweaks.forge.asm.ContainerTransformer
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
